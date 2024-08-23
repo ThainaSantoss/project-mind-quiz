@@ -1,10 +1,13 @@
 // inicial data
 let currentQuestion = 0; // questão atual
 let correctAnswers = 0;
-showQuestion();
+showQuestion = 0;
+
+
 
 //EVENTS
 document.querySelector('.scoreArea button').addEventListener('click', resetEvent)
+document.querySelector('.start-button').addEventListener('click', eventStart) // parou aqui, falta clicar no botão para aparecer as perguntas
 
 //functions
 

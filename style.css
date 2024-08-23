@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +12,36 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(58,79,180);
+    background: linear-gradient(90deg, rgba(58,79,180,1) 0%, rgba(29,109,253,1) 50%, rgba(69,180,252,1) 100%);
+    font-family: "Poppins", sans-serif;
 }
+
 
 h1 {
     color: #FFF;
     margin: 20px 0;
 }
+
+.start-button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #CCC;
+    margin: 20px auto;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+.start-button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 
 .progress {
     height: 5px;
@@ -26,6 +50,7 @@ h1 {
     top: 0;
     right: 0;
 }
+
 .progress--bar {
     background-color: #00FF00;
     height: 100%;
@@ -40,6 +65,9 @@ h1 {
 .questionArea {
     max-width: 500px;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .question {
@@ -54,7 +82,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin-bottom: 5px;
-    color: #AAA;
+    color: #e0e0e0;
     font-size: 16px;
     cursor: pointer;
 }
@@ -68,7 +96,7 @@ h1 {
     margin-left: 5px;
     margin-right: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    color: #555;
+    color: #ffffff;
 }
 .option:hover {
     background-color: rgba(0, 0, 0, 0.2);
@@ -108,7 +136,7 @@ h1 {
     border: 0;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #CCC;
+    color: #e7e4e4;
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;

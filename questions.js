@@ -1,95 +1,103 @@
 let questions = [
     {
-        question: 'Em qual elemento HTML nós colocamos o javascript?',
+        question: 'Qual número deve substituir o ponto de interrogação? 2,4,8,16,?',
         options: [
-            'tag js',
-            'tag script',
-            'tag scripting',
-            'tag javascript'
+            '20',
+            '24',
+            '30',
+            '32'
         ],
-        answer: 1
+        answer: 3
     },
+
     {
-        question: 'Onde é o local certo de colocar o javascript?',
+        question: 'Qual é o próximo número na sequência? 1,1,2,3,5,8,? ',
         options: [
-            'Na tag body',
-            'Na tag head',
-            'Tanto na tag body quanto a head estão corretas'
+            '10',
+            '12',
+            '13',
+            '15'
         ],
         answer: 2
     },
     {
-        question: 'Qual a sintaxe correta para adicionar um arquivo javascript externo na tag script?',
+        question: 'João é mais velho que Pedro, mas mais novo que Maria. Quem é o mais novo?',
         options: [
-            'name="xxx.js"',
-            'src="xxx.js"',
-            'href="xxx.js"'
+            'João',
+            'Pedro',
+            'Maria',
+            ' Não é possível determinar'
         ],
         answer: 1
     },
     {
-        question: 'Um arquivo javascript externo precisa ter a tag script',
+        question: 'Encontre o número que completa a sequência: 3,9,27,81,?',
         options: [
-            'Verdade',
-            'Falso'
+            '162',
+            '243',
+            '324',
+            '405'
         ],
         answer: 1
     },
     {
-        question: 'Como escrever um "Olá Mundo" em um alertbox?',
+        question: 'Se hoje é quarta-feira, que dia será depois de 10 dias?',
         options: [
-            'alertBox("Olá Mundo")',
-            'msgBox("Olá Mundo")',
-            'msg("Olá Mundo")',
-            'alert("Olá Mundo")'
+            'Sexta-feira',
+            'Sábado',
+            'Domingo',
+            'Segunda-feira'
+        ],
+        answer: 1
+    },
+    {
+        question: 'Qual palavra não pertence ao grupo?',
+        options: [
+            ' Saturno',
+            ' Netuno',
+            'Urano',
+            'Plutão'
         ],
         answer: 3
     },
     {
-        question: 'Como você cria uma função no Javascript?',
+        question: 'Um ônibus tem 40 passageiros. Na primeira parada, 5 pessoas saem e 7 entram. Na segunda parada, 10 pessoas saem e 2 entram. Quantas pessoas estão agora no ônibus? ',
         options: [
-            'function:minhaFuncao()',
-            'function = minhaFuncao()',
-            'function minhaFuncao()'
-        ],
-        answer: 2
-    },
-    {
-        question: 'Como chamar uma função chamada "minhaFuncao"?',
-        options: [
-            'call minhaFuncao',
-            'call function minhaFuncao',
-            'minhaFuncao()'
-        ],
-        answer: 2
-    },
-    {
-        question: 'Como escrever uma condicional IF no Javascript?',
-        options: [
-            'if i = 5',
-            'if i == 5 then',
-            'if (i == 5)',
-            'if i = 5 then'
-        ],
-        answer: 2
-    },
-    {
-        question: 'Como fazer um if que executa um código caso "i" for diferente de 5',
-        options: [
-            'if (i != 5)',
-            'if (i <> 5)',
-            'if i <> 5',
-            'if i =! 5 then'
+            '34',
+            '35',
+            '36',
+            '37'
         ],
         answer: 0
     },
     {
-        question: 'Como o loop while começa?',
+        question: 'Qual número deve substituir o ponto de interrogação? 5,8,13,21,?',
         options: [
-            'while (i <= 10)',
-            'while (i <= 10; i++)',
-            'while i = 1 to 10'
+            '30',
+            '33',
+            '34',
+            '36'
         ],
-        answer: 0
+        answer: 2
+    },
+    {
+        question: 'Eduardo tem 6 anos e seu irmão Pedro tem 10 anos. Quantos anos Eduardo terá quando Pedro tiver 15 anos?',
+        options: [
+            '8 anos',
+            '9 anos',
+            '10 anos',
+            '11 anos'
+        ],
+        answer: 3
+    },
+    {
+        question: 'Qual palavra não pertence ao grupo?',
+        options: [
+            'Maçã',
+            'Banana',
+            'Laranja',
+            'Batata'
+        ],
+        answer: 3
     },
 ];
