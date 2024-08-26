@@ -5,6 +5,12 @@ let correctAnswers = 0;
 //EVENTS
 document.querySelector(".scoreArea button").addEventListener("click", resetEvent);
 document.querySelector(".start-button").addEventListener("click", eventStart);
+document.querySelector('.btn-solution').addEventListener('click', showSolution);
+document.addEventListener('keydown', function(event) {
+ if (event.key === 'Enter') {
+  document.querySelector('.start-button').click();
+ }
+})
 
 //functions
 function eventStart() {
@@ -87,5 +93,24 @@ function resetEvent() {
 
 
 showQuestion()
+
 }
 
+  function showSolution() {
+    let solutionHtml = '';
+
+    questions.forEach((question, index) =>{
+      solutionHtml +=  `
+      <div class="solution">
+      <h3>Questão ${index + 1}: ${question.question}</h3>
+      <p><strong>Resposta correta:</strong> ${question.options[question.answer]}</p>
+      <p><strong>Explicação:</strong> ${question.explanation || "Explicação não disponível"}</p>
+      </div>
+      `;
+    })
+  
+    document.querySelector('.solutionArea').innerHTML = solutionHtml;
+    document.querySelector('.solutionArea').style.display = 'block';
+    document.querySelector('.questionArea').style.display = 'none';
+    document.querySelector('.scoreArea').style.display = 'none';
+  }
