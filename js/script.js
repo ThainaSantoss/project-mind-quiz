@@ -91,6 +91,9 @@ function resetEvent() {
   correctAnswers = 0;
   currentQuestion = 0;
 
+  document.querySelector('.solutionArea').style.display = 'none';
+
+
 
 showQuestion()
 
@@ -112,5 +115,5 @@ showQuestion()
     document.querySelector('.solutionArea').innerHTML = solutionHtml;
     document.querySelector('.solutionArea').style.display = 'block';
     document.querySelector('.questionArea').style.display = 'none';
-    document.querySelector('.scoreArea').style.display = 'none';
+    document.querySelector('.scoreArea').style.display = 'block';
   }

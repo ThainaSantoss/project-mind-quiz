@@ -24,18 +24,18 @@ h1 {
 }
 
 .start-button {
-    width: 100px;
-    height: 40px;
-    font-size: 15px;
+    width: 6rem;
+    height: 2,5rem;
+    font-size: 1rem;
     border: 0;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: #CCC;
     margin: 20px auto;
     cursor: pointer;
     text-align: center;
     display: block;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .start-button:hover {
@@ -44,7 +44,7 @@ h1 {
 
 
 .progress {
-    height: 5px;
+    height: 0.375rem;
     position: fixed;
     left: 0;
     top: 0;
@@ -64,38 +64,38 @@ h1 {
 }
 
 .questionArea {
-    max-width: 500px;
+    max-width: 35rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-radius: 15px;
+    padding: 1.25rem;
+    border-radius: 1rem;
 }
 
 .question {
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.25rem;
     margin: 20px 0;
 }
 .option {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 2.5rem;
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    margin-bottom: 5px;
+    border-radius: 0.625rem;
+    margin-bottom: 	0.375rem;
     color: #e0e0e0;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
 }
 .option span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    margin-left: 5px;
-    margin-right: 10px;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 1rem;
+    margin-left: 0.25rem;
+    margin-right: 0.625rem;
     background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
 }
@@ -105,41 +105,41 @@ h1 {
 
 .scoreArea {
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
-    border-radius: 20px;
-    margin: 10px;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    margin: 0.625rem;
     text-align: center;
 }
 .prizeImage {
     width: auto;
-    height: 100px;
-    margin-bottom: 10px;
+    height: 6rem;
+    margin-bottom: 0.625rem;
 }
 .scoreText1 {
     color: #000;
-    font-size: 23px;
+    font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .scorePct {
     color: #0d630d;
-    font-size: 30px;
+    font-size: 1.75rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .scoreText2 {
-    font-size: 16px;
+    font-size: 1rem;
     color: #000;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .scoreArea button {
     border: 0;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: #e7e4e4;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 0.625rem;
+    margin-top: 1.25rem;
     cursor: pointer;
 }
 .scoreArea button:hover {
@@ -147,26 +147,49 @@ h1 {
 }
 
 .solutionArea{
-    padding: 20px;
+    padding: 1.25rem;
     background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius: 0.625rem;
+    margin-top: 1.25rem;
 }
 
     .solution h3 {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
     
 .solution p {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+}
+
+footer {
+    margin-top: 1.25rem;
+    color: #FFF;
+    font-size: 0.875rem;
 }
 
 
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .questionArea {
+        max-width: 17rem;
+    }
+
+    .question {
+        font-size: 1.25rem;
+        margin: 15px 0;
+    }
+
+    .option {
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-
-footer {
-    margin-top: 20px;
-    color: #FFF;
-    font-size: 13px;
 }
