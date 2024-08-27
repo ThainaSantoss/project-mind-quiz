@@ -1,19 +1,19 @@
-// inicial data
-let currentQuestion = 0; // questão atual
-let correctAnswers = 0;
+// Inicial Data
+let currentQuestion = 0; // controls the index of the current issue
+let correctAnswers = 0; // stores the number of correct answers the user has given so far.
 
-//EVENTS
-document.querySelector(".scoreArea button").addEventListener("click", resetEvent);
-document.querySelector(".start-button").addEventListener("click", eventStart);
+//Events
+document.querySelector(".scoreArea button").addEventListener("click", resetEvent);  
+document.querySelector(".start-button").addEventListener("click", eventStart); 
 document.querySelector('.btn-solution').addEventListener('click', showSolution);
 document.addEventListener('keydown', function(event) {
- if (event.key === 'Enter') {
+ if (event.key === 'Enter') { // key event for "enter" button
   document.querySelector('.start-button').click();
  }
 })
 
 //functions
-function eventStart() {
+function eventStart() { // displays the home screen and hides questions
   document.querySelector(".start").style.display = "none";
   document.querySelector(".questionArea").style.display = "block";
 
@@ -27,14 +27,15 @@ function showQuestion() {
 
     let pct = Math.floor((currentQuestion / questions.length) * 100); // 2 / 4 = 0,5 * 100 = 50
 
-    document.querySelector(".progress--bar").style.width = `${pct}%`;
+    document.querySelector(".progress--bar").style.width = `${pct}%`; // percent progress
 
     document.querySelector(".scoreArea").style.display = "none";
     document.querySelector(".questionArea").style.display = "block";
 
     document.querySelector(".question").innerHTML = q.question;
 
-    let optionsHtml = "";
+    // the user clicks on an answer option
+    let optionsHtml = ""; 
     for (let i in q.options) {
       optionsHtml += `<div data-op="${i}" class="option"><span>${
         parseInt(i) + 1
@@ -42,7 +43,8 @@ function showQuestion() {
     }
 
     document.querySelector(".options").innerHTML = optionsHtml;
-    // efeito de click
+
+    // click effect
     document.querySelectorAll(".options .option").forEach((item) => {
       item.addEventListener("click", optionClickEvent);
     });
@@ -64,7 +66,7 @@ function optionClickEvent(e) {
 
 function finishQuiz() {
   let points = Math.floor((correctAnswers / questions.length) * 100); // 7 / 10 = 0,7 * 100 = 70%
-
+// feedback message based on the score.
   if (points < 30) {
     document.querySelector(".scoreText1").innerHTML = "Tá ruim em?!";
     document.querySelector(".scorePct").style.color = "#FF0000";
@@ -86,7 +88,7 @@ function finishQuiz() {
   document.querySelector(".progress--bar").style.width = "100%";
 }
 
-
+// reset the quiz
 function resetEvent() {
   correctAnswers = 0;
   currentQuestion = 0;
@@ -98,7 +100,7 @@ function resetEvent() {
 showQuestion()
 
 }
-
+// For each question, create an HTML block with the question, the correct answer and the explanation
   function showSolution() {
     let solutionHtml = '';
 
