@@ -19,11 +19,11 @@
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/mind-quiz.git
+    git clone https://github.com/ThainaSantoss/project-mind-quiz.git
     ```
 2. Navegue até a pasta do projeto:
     ```bash
-    cd mind-quiz
+    cd project-mind-quiz
     ```
 3. Abra o arquivo `index.html` no seu navegador preferido.
 
